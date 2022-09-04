@@ -29,12 +29,12 @@ public class WordManager {
 	
 	public void start() {
 		while(true) {
-			int menu = selectMenu();
-			if(menu == 0) break;
-			if(menu == 4) {
+			int menunum = selectMenu();
+			if(menunum == 0) break;
+			if(menunum == 4) {
 				wordCRUD.addWord();
 			}
-			else if(menu == 1) {
+			else if(menunum == 1) {
 				wordCRUD.listAll();
 			}
 		}
