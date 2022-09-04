@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author pibfa
+ *
+ */
+module WorldNote {
+}
