@@ -48,12 +48,12 @@ public class WordCRUD implements ICRUD{
 	}
 	
 	public void listAll() {
-		System.out.println("----------------------------------");
+		System.out.println("---------------------------------");
 		for(int i = 0; i < list.size(); i++) {
 			System.out.print((i+1) + " ");
 			System.out.println(list.get(i).toString());
 		}
-		System.out.println("----------------------------------");
+		System.out.println("---------------------------------");
 	}
 
 }
