@@ -14,6 +14,10 @@ public class Word {
 		
 		return str;
 	}
+	
+	public String toFileString() {
+		return this.level + "-" + this.word + "-" + this.meaning;
+	}
 
 	Word(){}
 	Word(int id, int level, String word, String meaning){
