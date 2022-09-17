@@ -28,14 +28,31 @@ public class WordManager {
 	}
 	
 	public void start() {
+		
+		wordCRUD.loadFile();
 		while(true) {
 			int menunum = selectMenu();
 			if(menunum == 0) break;
-			if(menunum == 4) {
-				wordCRUD.addWord();
-			}
 			else if(menunum == 1) {
 				wordCRUD.listAll();
+			}
+			else if(menunum == 2) {
+				wordCRUD.findLevel();
+			}
+			else if(menunum == 3) {
+				wordCRUD.findWord();
+			}
+			else if(menunum == 4) {
+				wordCRUD.addWord();
+			}
+			else if(menunum == 5) {
+				wordCRUD.updateWord();
+			}
+			else if(menunum == 6) {
+				wordCRUD.deleteWord();
+			}
+			else if(menunum == 7) {
+				wordCRUD.saveFile();
 			}
 		}
 	}
